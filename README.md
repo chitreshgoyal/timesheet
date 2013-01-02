@@ -7,7 +7,8 @@ Active_scaffold:
 
 
 1. install gem active_scaffold
-2. rails g scaffold fill_timesheet
+2. rails g active_scaffold fill_timesheet
+3. in application.css add  *= require active_scaffold
 
 
 
