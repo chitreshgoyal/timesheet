@@ -17,7 +17,7 @@ class FillTimesheetsController < ApplicationController
     # find_page is how the List module gets its data. see Actions::List#do_list.
     records = find_page().items
     return if records.size == 0
-    # chitresh
+
     # Note this code is very generic.  We could move this method and the
     # action_link configuration into the ApplicationController and reuse it
     # for all our models.
