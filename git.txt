@@ -1,0 +1,67 @@
+git branch (list branches)
+
+git branch chitresh (create branch chitresh)
+
+make repository first
+git remote add origin git@github.com:<username>/first_app.git
+
+
+
+
+git pull origin master (getting update from main source in chitresh branch)
+
+git add .
+git commit -m "message"
+
+
+git push origin master (if need to checkin in master repo)
+or
+git push origin chitresh (if need to checkin in chitresh branch repo)
+
+
+git merge chitresh (branch cleanup )
+
+git push origin :chitresh (delete branch chitresh)
+
+
+
+
+
+
+git checkout master  (Switched to branch 'master')
+git pull origin master (getting update in main source)
+git merge --no-ff chitresh (merged master & chitresh)
+git push origin master (checkin in master code)
+
+
+
+resolve conflicts
+
+git add filename.rb
+
+git commit -m "my changes"
+  CONFLICT (content): Merge conflict in filename.rb
+  Automatic merge failed; fix conflicts and then commit the result.
+
+git mergetool
+Just to use my changes... no
+their changes...
+
+git checkout --ours filename.rb
+git checkout --theirs filename.rb
+git add filename.rb
+git commit -m "using theirs"
+git pull origin branch_name
+
+
+
+
+------------revert changes-----------
+
+git revert commitnumber
+git merge master
+git add .
+git commit -m "revert files"
+git push origin master
+
+
