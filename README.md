@@ -1,8 +1,9 @@
-Employee Timesheet
+timesheet
 =========
 
 Active_scaffold:
-    Create, Edit, Delete, Search, Export CSV
+
+create,edit,delete,search
 
 
 
